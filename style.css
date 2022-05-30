@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container {
+    margin: 180px auto;
+    padding: 0px auto;
+    max-width: 900;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartype {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+.sedans {
+    border: .5px solid hsl(31, 77%, 52%);
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    line-height: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.suvs {
+    border: .5px solid (184, 100%, 22%);
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    line-height: 25px;
+}
+.luxury {
+    border: .5px solid hsl(179, 100%, 13%);
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    line-height: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.button {
+    margin-top: 40px;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+    width: 120px;
+}
+#sedan {
+    color: hsl(31, 77%, 52%);
+    font-weight: bold;
+}
+#suv {
+    color: hsl(184, 100%, 22%);
+    font-weight: bold;
+}
+#lux {
+    color: hsl(179, 100%, 13%);
+    font-weight: bold;
+}
+#sedan:hover {
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+#suv:hover {
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+#lux:hover {
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Responsiveness Starts Here */
+
+@media (max-width: 968px) {
+    body {
+        display: block;
+        text-align: center;
+    }
+    .container {
+        width: 900px;
+        margin: 0 auto;
+        padding: 0 20%;
+        display: block;
+    }
+    .sedans {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    .luxury {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0;
+    }
+    .attribution {
+        margin: 50px auto;
+    }
+}
